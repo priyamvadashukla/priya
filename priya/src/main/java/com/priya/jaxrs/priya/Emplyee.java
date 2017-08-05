@@ -14,6 +14,7 @@ public class Emplyee
 			        @DefaultValue("2002") @QueryParam("minyear") int minyear,
 			        @DefaultValue("2010") @QueryParam("maxyear") int maxyear)
 			    {
+					System.out.println("after pushing data");
 					return getEmployees(1990, 2009);
 		
 			    }
