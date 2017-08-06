@@ -16,44 +16,42 @@ import javax.ws.rs.core.Response;
 public class MyResource {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
-	public String hi() 
-	{
+	public String hi() {
 		return "hi";
 	}
-	
-    /**
-     * Method handling HTTP GET requests. The returned object will be sent
-     * to the client as "text/plain" media type.
-     *
-     * @return String that will be returned as a text/plain response.
-     */
-    /*@GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
-        return "Got it!";
-    }
-    @GET
-    @Produces(MediaType.TEXT_XML)
-    	public String  getUser(){
-    		return "<?xml version=\"1.0\"?>" + "<hello> Hello Jersey love you" + "</hello>"; 
-    	}*/
-   /* @GET
-    @Path("/{param}")
-    public Response getmessage(@PathParam("param")String mesg) 
-    {
-    	String output="hello miss priya"+mesg;
-		return Response.status(200).entity(output).build();
-    	
-    }*/
-	
-   /* @Path("a")
-    class A
-    {
-    	@GET
-    	@Produces(MediaType.TEXT_PLAIN)
-    	public String getlove() {
-    		return "hello my love";
-    	}*/
-    }
-    
 
+	/**
+	 * Method handling HTTP GET requests. The returned object will be sent to the
+	 * client as "text/plain" media type.
+	 *
+	 * @return String that will be returned as a text/plain response.
+	 */
+	/*
+	 * @GET
+	 * 
+	 * @Produces(MediaType.TEXT_PLAIN) public String getIt() { return "Got it!"; }
+	 * 
+	 * @GET
+	 * 
+	 * @Produces(MediaType.TEXT_XML) public String getUser(){ return
+	 * "<?xml version=\"1.0\"?>" + "<hello> Hello Jersey love you" + "</hello>"; }
+	 */
+	/*
+	 * @GET
+	 * 
+	 * @Path("/{param}") public Response getmessage(@PathParam("param")String mesg)
+	 * { String output="hello miss priya"+mesg; return
+	 * Response.status(200).entity(output).build();
+	 * 
+	 * }
+	 */
+
+	/*
+	 * @Path("a") class A {
+	 * 
+	 * @GET
+	 * 
+	 * @Produces(MediaType.TEXT_PLAIN) public String getlove() { return
+	 * "hello my love"; }
+	 */
+}

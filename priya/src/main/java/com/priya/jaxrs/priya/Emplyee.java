@@ -5,17 +5,15 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
+
 @Path("/employees")
-public class Emplyee 
-{
-	//@Path("/employees")
-			@GET
-			public Response getEmployees(
-			        @DefaultValue("2002") @QueryParam("minyear") int minyear,
-			        @DefaultValue("2010") @QueryParam("maxyear") int maxyear)
-			    {
-					System.out.println("after pushing data");
-					return getEmployees(1990, 2009);
-		
-			    }
+public class Emplyee {
+	// @Path("/employees")
+	@GET
+	public Response getEmployees(@DefaultValue("2002") @QueryParam("minyear") int minyear,
+			@DefaultValue("2010") @QueryParam("maxyear") int maxyear) {
+		System.out.println("after pushing data");
+		return Response.status(200).entity("addPerson is called, name : " + minyear + ", age : " + maxyear).build();
+
+	}
 }

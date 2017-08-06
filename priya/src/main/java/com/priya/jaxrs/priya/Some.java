@@ -7,11 +7,9 @@ import javax.ws.rs.core.MediaType;
 
 @Path("some")
 @Produces(MediaType.TEXT_PLAIN)
-public class Some 
-{
-@GET
-public String dogetasplaintext() 
-{
-	return "dont worry about future";
-}
+public class Some {
+	@GET
+	public String dogetasplaintext() {
+		return "dont worry about future";
+	}
 }

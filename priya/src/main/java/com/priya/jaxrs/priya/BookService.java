@@ -7,18 +7,14 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
 @Path("/books")
-public class BookService 
-{
+public class BookService {
 	@GET
 	@Path("{year}")
-	public Response getBooks(@PathParam("year") String year,
-	@MatrixParam("author") String author,
-	@MatrixParam("country") String country) {
+	public Response getBooks(@PathParam("year") String year, @MatrixParam("author") String author,
+			@MatrixParam("country") String country) {
 
-	return Response
-	.status(200)
-	.entity("getBooks is called, year : " + year
-	+ ", author : " + author + ", country : " + country)
-	.build();
+		return Response.status(200)
+				.entity("getBooks is called, year : " + year + ", author : " + author + ", country : " + country)
+				.build();
 	}
 }

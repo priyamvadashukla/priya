@@ -8,12 +8,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/new")
-public class New
-{
-@POST
-@Produces(MediaType.TEXT_PLAIN)
-public String hiji() 
-{
-	return "hello";
-}
+public class New {
+	@POST
+	@Produces(MediaType.TEXT_PLAIN)
+	public String hiji() {
+		return "hello";
+	}
 }

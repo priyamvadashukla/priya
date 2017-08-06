@@ -7,12 +7,10 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/user/{username}/{gh2}/")
 
-public class Username 
-{
-@GET
-@Produces(MediaType.TEXT_PLAIN)
-public String hellometh() 
-{
-	return "my birthday date is 9 Aug";
-}
+public class Username {
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String hellometh() {
+		return "my birthday date is 9 Aug";
+	}
 }

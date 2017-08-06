@@ -6,9 +6,10 @@ import javax.ws.rs.ext.Provider;
 
 import org.omg.CORBA.NameValuePair;
 
-//@Consumes("application/x-www-form-urlencoded")
-//@Provider
-/*public class FormReader implements MessageBodyReader<NameValuePair>
-{
-
-}*/
+// @Consumes("application/x-www-form-urlencoded")
+// @Provider
+/*
+ * public class FormReader implements MessageBodyReader<NameValuePair> {
+ * 
+ * }
+ */
